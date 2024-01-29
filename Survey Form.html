@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Surveyformstyles.css"> 
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a moment to fill out our survey</p>
+    <form id="survey-form">
+      <fieldset>
+             <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label><br>
+          <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label><br>
+        <label id="number-label" for="number">Your Age: <input id="number" name="number" type="number" min="5" max="100" placeholder="Enter a number" required /></label><br>
+        </fieldset>
+        <label for="dropdown">What do you prefer to do in your free time?
+          <select id="dropdown" name="freetime">
+            <option value="">(select one)</option>
+            <option value="1">Listen to music</option>
+            <option value="2">Stay home and relax</option>
+            <option value="3">Walks in the nature</option>
+            <option value="4">Other</option>
+          </select>
+          <fieldset>
+           <legend>Do you prefer to stay at home or go outside (required)</legend>
+        <label for="stay-home"><input id="stay-home" type="radio"  name="prefer" class="inline" value="1" checked /> Stay home</label>
+        <label for="go-outside"><input id="go-outside" type="radio" name="prefer" class="inline" value="2"/> Go outside</label>
+      </fieldset>
+     <p>What kind of <strong>music</strong> do you prefer</p>
+  <input type="checkbox" id="rock" name="rock" value="Rock">
+  <label for="rock"> I like Rock</label><br>
+  <input type="checkbox" id="clasic" name="clasic" value="Clasic">
+  <label for="clasic"> I like clasic music</label><br>
+  <input type="checkbox" id="folklor" name="folklor" value="Folklor">
+  <label for="folklor"> I like Folklor</label><br>
+  <input type="checkbox" id="other" name="other" value="other">
+  <label for="other"> other</label><br>
+  <label for="bio">What do you like to do in your free tyme:
+    <textarea id="free" name="free" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+  </label>
+  <input id="submit" type="submit" value="submit"> 
+        </form>
+</body>
+</html>
